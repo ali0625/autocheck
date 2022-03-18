@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+import os
 from urllib import parse
 
 username = os.environ["USERNAME"]  # 北航统一认证账号;
