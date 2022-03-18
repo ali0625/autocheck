@@ -140,7 +140,7 @@ def check():
     resp_json = json.loads(req_save.content.decode("utf-8"), parse_int=str)
 
     # out(str(resp_json))
-    out("请求上传成功！ 填报人：%s\n\n提示：%s" % (save_data["realname"], resp_json["m"]))
+    out("请求上传成功！ \n\n提示：%s" % (resp_json["m"]))
 
 
 if __name__ == "__main__":
