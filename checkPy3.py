@@ -7,7 +7,7 @@ from urllib import parse
 username = os.environ["USERNAME"]  # 北航统一认证账号;
 password = os.environ["PASSWORD"]  # 登陆密码;
 qq = os.environ["QQ"]
-qmsg = os.environ["QMSGKEY"]
+qmsg = '49b04ed825d22d9ee77e246847e770b1'
 boarder = "1"  # 是否在校住宿; 是 "1"，否 "0". 若为 "0", 填写下一项;
 wechat_key = os.environ["WECHAT"]
 
