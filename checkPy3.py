@@ -6,10 +6,11 @@ from urllib import parse
 
 username = os.environ["USERNAME"]  # 北航统一认证账号;
 password = os.environ["PASSWORD"]  # 登陆密码;
-boarder = "1"  # 是否在校住宿; 是 "1"，否 "0". 若为 "0", 填写下一项;
-wechat_key = os.environ["WECHAT"]
 qmsg = os.environ["QMSGKEY"]
 qq = os.environ["QQ"]
+boarder = "1"  # 是否在校住宿; 是 "1"，否 "0". 若为 "0", 填写下一项;
+wechat_key = os.environ["WECHAT"]
+
 
 def bot_post(text):
         data = {
