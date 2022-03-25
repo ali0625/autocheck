@@ -8,10 +8,18 @@ username = os.environ["USERNAME"]  # 北航统一认证账号;
 password = os.environ["PASSWORD"]  # 登陆密码;
 boarder = "1"  # 是否在校住宿; 是 "1"，否 "0". 若为 "0", 填写下一项;
 wechat_key = os.environ["WECHAT"]
+qmsg = os.environ["QMSGKEY"]
+qq = os.environ["QQ"]
 
 def bot_post(text):
+        data = {
+                "msg": text,  # 需要发送的消息
+                "qq": qq  # 需要接收消息的QQ号码
+        }
         url1 = 'https://sctapi.ftqq.com/' + wechat_key + '.send?title=check_ok' + '&desp='+text+time.strftime("%m-%d", time.localtime())
         re_result = requests.get(url1)
+        url2 = 'https://qmsg.zendee.cn/send/'+KEY
+        requests.post(url2,data=data)
         print(re_result.text)
 
 not_boarder_reasen = ""  # 若 boarder 为 "0", 请选数字: {
