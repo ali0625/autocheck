@@ -18,7 +18,7 @@ def bot_post(text):
         }
         url1 = 'https://sctapi.ftqq.com/' + wechat_key + '.send?title=check_ok' + '&desp='+text+time.strftime("%m-%d", time.localtime())
         re_result = requests.get(url1)
-        url2 = 'https://qmsg.zendee.cn/send/'+KEY
+        url2 = 'https://qmsg.zendee.cn/send/'+qmsg
         requests.post(url2,data=data)
         print(re_result.text)
 
