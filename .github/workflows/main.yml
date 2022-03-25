@@ -24,4 +24,6 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
         USERNAME: ${{ secrets.USERNAME }}
         WECHAT: ${{secrets.WECHAT}}
+        QMSGKEY: ${{secrets.QMSGKEY}}
+        QQ: ${{secrets.QMSGKEY}}
       run: python checkPy3.py
